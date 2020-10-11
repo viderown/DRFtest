@@ -13,7 +13,7 @@ from api.models import Deal, Customer
 from api.serializers import DealSerializer
 
 
-class DealViewSet(ListModelMixin, GenericViewSet):
+class DealViewSet(GenericViewSet):
     queryset = Deal.objects.all()
     serializer_class = DealSerializer
 
